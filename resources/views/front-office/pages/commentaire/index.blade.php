@@ -10,8 +10,9 @@
                     <div class="comments-list-wrap">
                         <h3 class="comment-count-title">Commentaires de l'article: <span
                                 class="text-primary">{{ $article->titre }}</span></h3>
-                        <div class=""><img src="{{ Storage::url('images/' . $article->image_path) }}"
-                                alt="{{ $article->titre }}"></div>
+                        <div class=""><img src="{{ Storage::url($article->image) }}" alt="{{ $article->titre }}"
+                                width="100" height="100">
+                        </div>
                         <p class="blog-meta">
                             <span class="author"><i class="fas fa-user"></i>
                                 {{ $article->user->nom ? $article->user->nom : '---' }}

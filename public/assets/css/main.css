@@ -1875,6 +1875,10 @@ span.comment-date {
   margin-left: 160px;
 }
 
+.image_path {
+  height: 10px !important;
+}
+
 .sidebar-section {
   margin-left: 30px;
 }
