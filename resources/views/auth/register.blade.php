@@ -142,7 +142,7 @@
                                     </div>
                                     <div class="mt-4">
                                         <button class="btn btn-success w-100 text-white"
-                                            type="submit">Enregistrer</button>
+                                            type="submit">S'inscrire</button>
                                     </div>
                                     @if (session()->has('error'))
                                         <div style="margin-top: 10px;" class="alert alert-danger" role="alert">

@@ -59,8 +59,9 @@
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <div class="avatar-lg">
-                                <img src="{{ Storage::url($article->image_path) }}" alt="{{ $article->titre }}"
-                                    alt="article_img" class="img-thumbnail rounded-circle" />
+                                <img src="{{ Storage::url($article->image) }}" alt="{{ $article->titre }}"
+                                    alt="article_img" class="img-thumbnail rounded-circle" width="90"
+                                    height="90" />
                             </div>
                         </div>
                         <div class="col-12">
