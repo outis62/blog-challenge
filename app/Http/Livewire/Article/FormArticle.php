@@ -45,7 +45,7 @@ class FormArticle extends Component
         $articleId = auth()->id();
         if ($articleId) {
             $validatedData['user_id'] = $articleId;
-            $validatedData['image_path'] = $this->imagePath;
+            $validatedData['image'] = $this->imagePath;
 
             if ($this->article->id) {
                 $this->updatedForm($validatedData);
@@ -72,7 +72,7 @@ class FormArticle extends Component
                 ->with('success', "L'article a été mise à jour avec succès !");
         } catch (\Throwable $th) {
             return redirect()->route($this->showRoute['link'], $this->article)
-                ->with('warning', "La article n'a pas pu être mise à jour : " . $th->getMessage());
+                ->with('warning', "L'article n'a pas pu être mise à jour : " . $th->getMessage());
         }
     }
 }

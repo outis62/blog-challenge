@@ -12,7 +12,7 @@
                                 <div class="post-heading">
                                     <h3><a href="#">{{ $article->titre ? $article->titre : '---' }}</a></h3>
                                 </div>
-                                <img src="{{ Storage::url('images/' . $article->image_path) }}" alt="{{ $article->titre }}">
+                                <img src="{{ Storage::url($article->image) }}" alt="{{ $article->titre }}">
                             </div>
                         </div>
                         <div class="col-md-6">
